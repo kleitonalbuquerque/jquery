@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exemplo 3</title> 
+</head>
+<body>
+  <h1>Exemplo 3</h1>
+
+  <p>jQuery é uma biblioteca JavaScript</p>
+  <p>jQuery é de código aberto e livre para usar</p>
+  <p>jQuery aumenta a produtividade em um projeto</p>
+
+  <!-- Referencia a biblioteca jquery (JS) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('p').on('click', function(){
+        alert('Click efetuado!')
+        console.log('Click efetuado!')
+      });
+    });
+  </script>
+</body>
+</html>

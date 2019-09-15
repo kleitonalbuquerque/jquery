@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exemplo 5</title> 
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+  <h1>Exemplo 5</h1>
+
+  <img src="img/img1.png" alt="HTML5" class="icone">
+  <img src="img/img2.png" alt="CSS3" class="icone">
+  <img src="img/img3.png" alt="JavaScript" class="icone">
+
+  <!-- Referencia a biblioteca jquery (JS) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.icone').on('mouseover', function(){
+        $('.icone').css('opacity', 0.3)
+        $(this).css('opacity', 1)
+      });
+    });
+    
+  </script>
+</body>
+</html>
